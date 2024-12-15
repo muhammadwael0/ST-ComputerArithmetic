@@ -16,15 +16,15 @@ module tb_brent_kung_adder();
 
     initial begin
  
-        A = 64'hFFFFFFFF00000000; B = 64'h00000000FFFFFFFF; Cin = 1; #10; 
+        A = 64'h00000000f; B = 64'h0000000011; Cin = 1; #10; 
         $display("A: %h, B: %h, Cin = %b, Sum: %h, CarryOut: %b", A, B, Cin, Sum, CarryOut);
-        A = 64'hFFFFFFFF00000000; B = 64'h00000000FFFFFFFF; Cin = 0; #10; 
+        A = 64'h0000000012; B = 64'h000000001; Cin = 0; #10; 
         $display("A: %h, B: %h, Cin = %b, Sum: %h, CarryOut: %b", A, B, Cin, Sum, CarryOut);
         A = 64'h0000000000000001; B = 64'h0000000000000001; Cin = 1; #10; 
         $display("A: %h, B: %h, Cin = %b, Sum: %h, CarryOut: %b", A, B, Cin, Sum, CarryOut);
-        A = 64'h0000000000000000; B = 64'h00000000FFFFFFFF; Cin = 1; #10; 
+        A = 64'd00000003000; B = 64'd000000006000; Cin = 1; #10; 
         $display("A: %h, B: %h, Cin = %b, Sum: %h, CarryOut: %b", A, B, Cin, Sum, CarryOut);
-        A = 64'hFFFFFFFFFFFFFFFF; B = 64'h0000000000000000; Cin = 1; #10; 
+        A = 64'hFFFFFFFFFFFFFFFF; B = 64'hFFFFFFFFFFFFFFFF; Cin = 1; #10; 
         $display("A: %h, B: %h, Cin = %b, Sum: %h, CarryOut: %b", A, B, Cin, Sum, CarryOut);
       $finish;
     end

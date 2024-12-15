@@ -135,7 +135,7 @@ module brent_kung_adder (
     endgenerate
 
     assign Carry_out = Gn_5[7] | (Pn_5[7] & Cin);
-    assign Sum = Pn_5 ^ Carry;
+    assign Sum = P ^ Carry;
 endmodule
 
 module tb_brent_kung_adder();

@@ -1,7 +1,3 @@
-// there are problems with some corner cases
-// I tried so hard to fix the code  
-
-
 `timescale 1ns / 1ps
 
 module brent_kung_adder (
@@ -33,7 +29,7 @@ module brent_kung_adder (
     endgenerate
 
   assign Cout = G_out[63] | (P_out[63] & Cin);
-    assign Sum = P_out ^ Carry;
+    assign Sum = P_in ^ Carry;
 
 endmodule
 
