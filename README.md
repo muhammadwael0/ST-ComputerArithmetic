@@ -3,7 +3,7 @@
 ## Task 1
 > Design 64-bit brent-kung adder
 ```
-this task aims to enhance the additional operation in the digital system
+this task aims to enhance the addition operation in the digital system
 Delay recurrence :
     D(k) = D(k/2)+2 = 2 log2(k) – 1
 Cost recurrence :
