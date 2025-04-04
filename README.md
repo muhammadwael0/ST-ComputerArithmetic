@@ -1,4 +1,4 @@
-# STmicroelectronics Computer Arithmetic Training
+# STMicroelectronics Computer Arithmetic Training
 
 ## Task 1
 > Design 64-bit brent-kung adder
